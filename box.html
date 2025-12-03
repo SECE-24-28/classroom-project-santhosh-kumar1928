@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            .box1{
+                width:100px;
+                height:100px;
+                margin:10px;
+                background-color:red;
+                position:relative;
+                
+                z-index:2;
+                
+
+            }
+            .box2{
+                height: 100px;
+                width: 100px;
+                margin:10px;
+                background-color:blue;
+                position:relative;
+                z-index:1;
+            }
+            .box3{
+                height: 100px;
+                width: 100px;
+                margin:10px;
+                background-color:green;
+                position:relative;
+            }
+            .main{
+                background-color:aqua;
+                display:flex;
+                flex-wrap:wrap;
+                flex-direction:column;
+                 /* justify-content:space-around; */
+                align-items:flex-end;
+
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <!-- <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div> -->
+    </div>
+    </html></body>
+</html>
