@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes growbox{
+            0%{
+                width: 20px;
+                height: 20px;
+            }
+            50%{
+                width: 100px;
+                height: 100px;
+                background-color: lightskyblue;
+            }
+            100%{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: limegreen;
+            animation-name: growbox;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate{
+           0%{
+            transform: rotate(0deg);
+           }
+           50%{
+            transform: rotate(180deg);
+            background-color: aqua;
+           }
+           100%{
+            transform: rotate(0deg);
+           }
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-top: 30px;
+            animation: rotate 1s infinite;
+        }
+        @keyframes scale{
+            0%{
+                font-size: 50px;
+            }
+            100%{
+               font-size: 200px;
+            }
+        }
+        .emoji{
+            width: 50px;
+            height: 50px;
+            font-size: 100px;
+            margin-top: 30px;
+            animation-name: scale;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="emoji">💌</div>
+</body>
+</html>
